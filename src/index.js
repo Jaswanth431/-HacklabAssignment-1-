@@ -7,13 +7,13 @@ const box3 = document.querySelector('.box3');
 const redTimer = 20;
 const greenTimer = 15;
 const yellowTimer = 5;
-
+ 
 //clearing  previous timeouts if any before making next transitions
 let timeouts = [];
 function clearAllTimeouts(){
     for(let i=0;i<timeouts.length;i++){
         clearTimeout(timeouts[i]);
-    }
+    } 
 }
 
 //starting FSM, resetting everything and starting form a given color
